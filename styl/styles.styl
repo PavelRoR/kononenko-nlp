@@ -1,0 +1,129 @@
+@font-face {
+	font-family: 'AvenirNextCyr';
+	src: url('../fonts/AvenirNextCyr.eot');
+	src: url('../fonts/AvenirNextCyr.eot') format('embedded-opentype'),
+		 url('../fonts/AvenirNextCyr.woff2') format('woff2'),
+		 url('../fonts/AvenirNextCyr.woff') format('woff'),
+		 url('../fonts/AvenirNextCyr.otf') format('opentype'),
+		 url('../fonts/AvenirNextCyr.ttf') format('truetype'),
+		 url('../fonts/AvenirNextCyr.svg#AvenirNextCyr') format('svg');
+	font-display: fallback;
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Merriweather';
+	src: url('../fonts/Merriweather.eot');
+	src: url('../fonts/Merriweather.eot') format('embedded-opentype'),
+		 url('../fonts/Merriweather.woff2') format('woff2'),
+		 url('../fonts/Merriweather.woff') format('woff'),
+		 url('../fonts/Merriweather.ttf') format('truetype'),
+		 url('../fonts/Merriweather.svg#Merriweather') format('svg');
+	font-display: fallback;
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'MerriweatherBold';
+	src: url('../fonts/MerriweatherBold.eot');
+	src: url('../fonts/MerriweatherBold.eot') format('embedded-opentype'),
+		 url('../fonts/MerriweatherBold.woff2') format('woff2'),
+		 url('../fonts/MerriweatherBold.woff') format('woff'),
+		 url('../fonts/MerriweatherBold.ttf') format('truetype'),
+		 url('../fonts/MerriweatherBold.svg#MerriweatherBold') format('svg');
+	font-display: fallback;
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+*
+	margin 0
+	padding 0
+	outline none
+body
+	font-size: 18px
+	font-family: 'Merriweather', serif
+	line-height: 1.3
+a
+	color: #fefefe
+	&:focus
+		outline: 0
+	&:hover
+		text-decoration none
+h1,h2,h3,h4,h5,h6
+	font-family: 'MerriweatherBold', serif
+	font-weight normal
+	margin 0
+button
+	border none
+.video_wrapper
+	margin 0 auto
+	position relative
+	width 100%
+	&:before
+		content ''
+		height 0
+		padding-top 56.25%
+		display block
+	&:after
+		content: ''
+		display block
+		position: absolute
+		top: 0
+		left 0
+		right 0
+		width: 100%
+		height 70px
+	img,
+	iframe
+		position absolute
+		width 100%
+		height 100%
+		display block
+		background-color #000
+		border-radius 3px
+		border: 0
+		top 0
+		left 0
+		right 0
+		bottom 0
+		cursor pointer
+.button
+	display block
+	margin 0 auto
+	background-color: rgb(224,26,16)
+	background-image: linear-gradient( 0deg, rgb(224,26,16) 0%, rgb(171,28,21) 100%);
+	box-shadow: 0px 3px 55.8px 6.2px rgba(0, 0, 0, 0.32);
+	width: 370px;
+	height: 69px;
+	line-height: 69px;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	cursor pointer
+	text-decoration: none
+	&:focus
+		text-decoration: none
+		color rgb(255, 255, 255);
+		background-color: rgb(224,26,16)
+		background-image: linear-gradient( 0deg, rgb(224,26,16) 0%, rgb(171,28,21) 100%);
+	&:hover
+		text-decoration: none
+		color rgb(255, 255, 255);
+		background-color: rgb(171,28,21)
+		background-image: linear-gradient( 180deg, rgb(224,26,16) 0%, rgb(171,28,21) 100%);
+.general_title
+	font-size: 30px;
+	font-family: "MerriweatherBold", serif
+	color: rgb(255, 255, 255);
+	line-height: 0.633;
+	text-align: center;
+	margin-bottom: 45px
+
+@import 'main/main'
+@import 'main/get'
+@import 'main/plan'
+@import 'main/author'
+@import 'main/revs'
+@import 'main/footer'
+@import 'main/medias'
