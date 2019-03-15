@@ -1,0 +1,18 @@
+-var fb_href = 'https://kononenko.mastervision.su/nlp/bonus/';
+-var title = 'Бонус от Ольги Кононенко';
+-var og_title = 'Бонус';
+-var og_desc = 'От Ольги Кононенко';
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/bonus/head
+	body
+		include pug/bonus/metrics
+		include pug/bonus/main
+		include pug/bonus/feedback
+		include pug/bonus/footer
+		<!-- AutoWebOffice: UTM or OpenStat Counter -->
+		script(type="text/javascript")
+			| var url = "https://shop.mastervision.su/?r=api/utmopenstat";
+		script(type="text/javascript" src="https://shop.mastervision.su/js/utm_openstat.js" defer="defer")
+		<!-- /AutoWebOffice: UTM or OpenStat Counter -->

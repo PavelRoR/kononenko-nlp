@@ -4,13 +4,12 @@ html(lang="ru")
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device=width, initial-scale=1")
 		meta(http-equiv="X-UA-Compatible" content="ie=edge")
-		meta(property="og:title" content="«Асс НЛП»")
-		meta(property="og:description" content="3-хдневный интенсив Ольги Кононенко")
-		meta(property="og:image" content="https://kononenko.mastervision.su/nlp/img/banner.jpg")
-		title «Асс НЛП». 3-хдневный интенсив Ольги Кононенко
-		link(rel="icon" type="image/x-icon" href="favicon.ico")
-		link(rel="shortcut icon" type="image/x-icon" href="favicon.png")
-		link(rel="stylesheet" href="css/styles.css")
+		meta(property="og:title" content="Вы зарегистрированы на интенсив по НЛП")
+		meta(property="og:description" content="Скорее проверьте почту, вас ждут домашние задания!")
+		title Вы зарегистрированы на интенсив по НЛП. 3-хдневный интенсив Ольги Кононенко. Скорее проверьте почту, вас ждут домашние задания!
+		link(rel="icon" type="image/x-icon" href="../favicon.ico")
+		link(rel="shortcut icon" type="image/x-icon" href="../favicon.png")
+		link(rel="stylesheet" href="../css/bonus.css")
 		script 
 			| !function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?158",t.onload=function(){VK.Retargeting.Init("VK-RTRG-11201-hHU9b"),VK.Retargeting.Hit()},document.head.appendChild(t)}();
 		noscript
@@ -33,17 +32,14 @@ html(lang="ru")
 			div
 				img(src="https://mc.yandex.ru/watch/35450015" style="position:absolute; left:-9999px;" alt="")
 		<!-- /Yandex.Metrika counter -->
-		include pug/main/main
-		include pug/main/get
-		include pug/main/plan
-		include pug/main/author
-		include pug/main/revs
-		include pug/main/footer
-		include pug/main/scripts
-		<!-- BEGIN JIVOSITE CODE {literal} -->
-		script(type='text/javascript')
-			| (function(){ var widget_id = 'DiE0qwfJ6l';var d=document;var w=window;function l(){ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id ; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);} if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);} else{w.addEventListener('load',l,false);}}})();
-		<!-- {/literal} END JIVOSITE CODE -->
+		section#main.remind
+			.container
+				include pug/bonus/header
+				h1.main_title.remind_main_title Вы зарегистрированы на интенсив 
+					a(href="/" target="_blank")  «Асс НЛП»
+						i.fa.fa-external-link(aria-hidden="true")
+				h2.main_subtitle.remind_main_subtitle Скорее проверьте почту, вас ждут домашние задания!
+		include pug/bonus/footer
 		<!-- AutoWebOffice: UTM or OpenStat Counter -->
 		script(type="text/javascript")
 			| var url = "https://shop.mastervision.su/?r=api/utmopenstat";

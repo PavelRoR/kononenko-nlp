@@ -47,7 +47,7 @@ $(document).ready(function () {
     });
     /* Сертификаты */
     $('#certs_container').owlCarousel({
-        loop: true,
+        // loop: true,
         margin: 20,
         nav: true,
         navText: ["<", ">"],
