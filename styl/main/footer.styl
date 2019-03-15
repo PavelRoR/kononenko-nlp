@@ -7,3 +7,152 @@
 		font-size: 14px;
 		color: rgba(254, 254, 254, .6);
 		line-height: 1.786;
+.modal-backdrop.in
+	opacity .8
+.modal-content
+	background-color: #001381
+	background-image url(../img/about_bg.jpg)
+	background-repeat: no-repeat
+	background-position: center bottom 
+	background-size: cover
+	text-align: center
+button.close
+	position absolute
+	width: 35px
+	height 35px
+	border-radius: 50px
+	line-height: 30px
+	text-align: center
+	font-size: 24px
+	color: #000
+	background-color: #F0F0F0
+	top 10px
+	right 10px
+	left auto
+	z-index 99
+	opacity 1
+	transition: all .1s ease-in-out
+	&:hover
+		color: #F0F0F0
+		background-color: #000
+.modal_mail_section_title
+	font-size: 30px
+	font-family: 'AvenirNextCyrBold', sans-serif
+	margin 0 auto 20px
+	width 100%
+	max-width 90%
+.modal_mail_subtitle
+	font-size: 22px
+.modal_mail
+	width 100%
+	max-width 370px
+	height 69px
+	line-height 69px
+	text-indent: 20px
+	border: 1px solid #fff
+	display block
+	margin 20px auto 10px
+.alert_message {
+	display: none;
+	text-align: center;
+	font-size: 16px;
+	padding-top: 10px;
+	color: #f00
+	font-family: 'Merriweather', serif
+}
+.checking {
+	display: table;
+	width 100%
+	margin: 10px auto 0;
+	text-align: left
+}
+
+.checking .check_label {
+	color: #000
+	line-height: 25px;
+	cursor: pointer;
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 0 0 45px;
+	text-align: left;
+	font-size: 14px
+}
+
+.checking .check_label a {
+	color: #000
+	text-decoration: underline
+}
+
+.checking .check_label:before {
+	content: '';
+	background-color: rgba(0,0,0,.7);
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 31px;
+	height: 31px;
+	border none
+}
+
+.checking .check_label:after {
+	content: '';
+	position: absolute;
+	left: 11px;
+	top: -10px;
+	width: 10px;
+	height: 19px;
+	background-color: transparent;
+	opacity: 0;
+	border-bottom: 3px solid #fff
+	border-right: 3px solid #fff
+	-webkit-transform: rotate(41deg);
+	-ms-transform: rotate(41deg);
+	transform: rotate(41deg);
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+
+}
+
+.check {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	width: 0;
+	height 0;
+	border: 0;
+	left -99999px;
+}
+
+.check:checked + .check_label:before {
+	background-color: #5E48E8;
+
+}
+
+.check:checked + .check_label:after {
+	opacity: 1;
+	top: 4px;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.politics_modal-content
+	background-color #fff
+	background-image none
+	.modal-title
+		font-size: 24px
+		text-align: left 
+		width 100%
+		max-width 90%
+		font-family: 'MerriweatherBold', serif
+		small
+			display: block
+	p
+		font-size: 16px
+		margin-bottom: 15px
+		text-align: left
+.modal_mail_section_title
+	margin 10px auto 20px
+	width 100%
+	max-width 85%
